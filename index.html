@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto NFC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Compartir datos con NFC</h1>
+        <label for="data-type">¿Qué quieres compartir?</label>
+        <select id="data-type">
+          <option value="phone">Número de teléfono</option>
+          <option value="image">Imagen</option>
+        </select>
+        <div id="phone-input" class="data-input">
+          <label for="phone">Escribe tu número de teléfono</label>
+          <input type="tel" id="phone" name="phone" placeholder="Ejemplo: 123-456-7890">
+        </div>
+        <div id="image-input" class="data-input">
+          <label for="image">Selecciona una imagen</label>
+          <input type="file" id="image" name="image" accept="image/*">
+        </div>
+        <button id="share-btn">Compartir</button>
+        <div id="result"></div>
+        <p>Acerca tu teléfono al dispositivo del destinatario para compartir los datos.</p>
+      </div>
+
+      <script src="main.js"></script>
+</body>
+</html>
